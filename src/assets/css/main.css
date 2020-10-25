@@ -1,0 +1,485 @@
+/*** reset style ***/
+html, body, nav, p, h1, h2, h3, h4, h5, h6, img, ul, li, div, section, input{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html, body{
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    background: #000;
+}
+
+h1, h2, h3, h4, h5, a, p, input, ul, li, ol{
+    font-family: 'Roboto', sans-serif;
+}
+
+a, button{
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: all .25s ease-in;
+}
+
+img{
+    width: 100%
+}
+
+:focus{
+    outline: none !important;
+}
+
+/*** header ***/
+header{
+    width: 80%;
+    padding: 2rem 10%;
+    position: absolute;
+    z-index: 99;
+}
+
+/*** logo ***/
+header .logo_holder{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+header .logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*** navigation ***/
+nav{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    text-align: right;
+    display: none;
+}
+
+nav .menu{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+}
+
+nav .menu .menu_bar{
+    background-color:#ffffff;
+    display: block;
+    position: absolute;
+    left: 8px;
+    width: 60%;
+    height: 2px;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+}
+
+nav .menu .menu_bar.top_menu{
+    top: 11px;
+}
+
+nav .menu .menu_bar.mid_menu{
+    top: 19px;
+}
+
+nav .menu .menu_bar.btm_menu{
+    top: 27px;
+}
+
+nav .menu .menu_bar.top_menu.animate{
+    top: 19px !important;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+nav .menu .menu_bar.mid_menu.animate{
+    opacity: 0;
+}
+
+nav .menu .menu_bar.btm_menu.animate{
+    top: 19px !important;
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+
+nav .menu .menu_block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main_nav{
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+    width: 80%;
+    text-align: right;
+}
+
+.main_nav a{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 2%;
+    font-weight: bold;
+}
+
+.main_nav a:hover, .main_nav a.active{
+    color:#f94050;
+}
+
+/*** footer ***/
+footer{
+    width: 80%;
+    padding: 3rem 10% 2rem;
+    margin: auto;
+}
+
+footer .left_section{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+footer .left_section .logo_holder{
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .left_section .logo_holder img{
+    width: 80px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+footer .left_section .logo_holder p{
+    font-size: 12px;
+}
+
+footer .left_section .footer_link_holder{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15%;
+}
+
+footer .left_section .footer_link_holder a{
+    display: block;
+    margin-bottom: 1.3rem;
+    font-size: 14px;
+}
+
+footer .right_section{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: right;
+}
+
+footer .right_section .company_contact{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-right: 15%;
+}
+
+footer .right_section .company_contact p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer .right_section .company_contact a{
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer .right_section .social_link_holder{
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .right_section .social_link_holder a{
+    display: block;
+    text-align: left;
+    margin: 0 0 1.4rem;
+}
+
+footer .right_section .social_link_holder a img{
+    display: inline-block;
+    vertical-align: middle;   
+    width: 25px;
+    filter: invert(1);
+}
+
+footer .right_section .social_link_holder a span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+    font-size: 14px;
+}
+
+/*** general ***/
+.section_holder{
+    width: 100%;
+    position: relative;
+}
+
+.section_holder .content{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+a.generic_btn:hover, button.generic_btn:hover{
+    opacity: 0.3;
+}
+
+/*** banner ***/
+#banner_section{
+    background-image: url('../images/205076-OZ78R2-2@2x.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#banner_section .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+}
+
+#banner_section .banner_content{
+    position: relative;
+    background-image: url('../images/Hero-MoviePic@2x.png');
+    background-size: 60%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#banner_section .banner_content .title_content{
+    padding: 20% 0 5%;
+    width: 70%;
+    margin: auto;
+}
+
+#banner_section h1, #popular_section h1{
+    font-size: 40px;
+    margin-bottom: 2%;
+    width: 60%;
+}
+
+#banner_section h3, #popular_section h3{
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 3%;
+    width: 45%;
+}
+
+#banner_section button{
+    background: #ff483c;
+    border-radius: 2rem;
+    padding: 0.7rem 1.7rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#banner_section .banner_content .top_slider{
+    margin-bottom: 5%;
+    margin-left: 15%;
+    position: relative;
+    width: 2000px;
+    overflow: hidden;
+}
+
+#banner_section .banner_content .top_slider a{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15%;
+    padding-bottom: 10%;
+    margin: 0 1% 3%;
+    display: inline-block;
+}
+
+#banner_section .banner_content .top_slider a#tp1{
+    background-image: url('../images/poster.jpg');
+    margin-left: 0;
+}
+#banner_section .banner_content .top_slider a#tp2{
+    background-image: url('../images/poster (4).jpg');
+}
+#banner_section .banner_content .top_slider a#tp3{
+    background-image: url('../images/poster (3).jpg');
+}
+#banner_section .banner_content .top_slider a#tp4{
+    background-image: url('../images/poster (2).jpg');
+}
+#banner_section .banner_content .top_slider a#tp5{
+    background-image: url('../images/poster (1).jpg');
+}
+
+/*** popular ***/
+#popular_section h4{
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+}
+
+#popular_section .link_holder{
+    width: 70%;
+    margin: 3% auto 0;
+}
+
+#popular_section .link_holder a{
+    font-size: 14px;
+    margin: 0 2% 2%;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 5px;
+    transition: none;
+}
+
+#popular_section .link_holder a:first-child{
+    margin-left: 0;
+}
+
+#popular_section .link_holder a:hover, #popular_section .link_holder a.active{
+    border-bottom: 3px solid #ed1e1e;
+}
+
+#popular_section .poster_holder{
+    margin-left: 15%;
+    position: relative;
+    width: 3000px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#popular_section .indicator_holder{
+    position: absolute;
+    width: 69.3%;
+    left: 15%;
+    top: 20%;
+}
+
+#popular_section .indicator_holder button{
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/right-arrow.png');
+    background-color: #fb405a;
+    width: 40px;
+    padding: 4rem 0;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+#popular_section .indicator_holder button#leftBtn{
+    transform: rotate(180deg);
+}
+
+#popular_section .indicator_holder button#rightBtn{
+    float: right;
+}
+
+#popular_section .poster_holder a{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 9.5%;
+    padding-bottom: 15%;
+    margin: 0 1% 3%;
+    display: inline-block;
+}
+
+#popular_section .poster_holder a#pp1{
+    background-image: url('../images/poster (5).jpg');
+    margin-left: 0;
+}
+#popular_section .poster_holder a#pp2{
+    background-image: url('../images/poster (6).jpg');
+}
+#popular_section .poster_holder a#pp3{
+    background-image: url('../images/poster (4).jpg');
+}
+#popular_section .poster_holder a#pp4{
+    background-image: url('../images/poster-season-6.jpg');
+}
+#popular_section .poster_holder a#pp5{
+    background-image: url('../images/poster (5).jpg');
+    margin-left: 0;
+}
+#popular_section .poster_holder a#pp6{
+    background-image: url('../images/poster (6).jpg');
+}
+#popular_section .poster_holder a#pp7{
+    background-image: url('../images/poster (4).jpg');
+}
+#popular_section .poster_holder a#pp8{
+    background-image: url('../images/poster-season-6.jpg');
+}
+
+#popular_section .btm_section{
+    position: relative;
+    background-image: url('../images/205076-OZ78R2-2@2x.png');
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    margin-top: -15%;
+    padding-bottom: 50%;
+}
+
+#popular_section .btm_section .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237,62,30,0.9);
+}
+
+#popular_section .btm_section .description_content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+#popular_section .btm_section .description_content .title_content{
+    display: inline-block;
+    vertical-align: middle;
+    width: 44%;
+    padding-left: 15%;
+    text-align: left;
+}
+
+#popular_section .btm_section .description_content img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 39%;
+}
+
+#popular_section h1{
+    width: 100%;
+}
+
+#popular_section h3{
+    width: 70%;
+}

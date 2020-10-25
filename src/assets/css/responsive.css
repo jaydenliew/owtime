@@ -1,0 +1,156 @@
+/*** responsive ***/
+@media print, screen and (max-width: 1024px) {
+    #banner_section h1, #popular_section h1{
+        font-size: 3.5vw;
+    }
+    #banner_section h3, #popular_section h3{
+        font-size: 2vw;
+        width: 50%;
+    }
+    #banner_section button{
+        font-size: 1.8vw;
+    }
+    #banner_section .banner_content .title_content, #popular_section h4, #popular_section .link_holder{
+        width: 80%;
+	}
+	#banner_section .banner_content .top_slider, #popular_section .poster_holder{
+		margin-left: 10%;
+	}
+    
+    #popular_section .btm_section .description_content .title_content{
+        width: 50%;
+        padding-left: 10%;
+    }
+    #popular_section h3{
+        width: 70%;
+	}
+	
+	#popular_section .indicator_holder{
+		left: 10%;
+		width: 80%;
+		top: 25%;
+	}
+}
+
+@media print, screen and (max-width: 780px) {
+	footer .left_section, footer .right_section, footer .left_section .logo_holder, footer .left_section .footer_link_holder, footer .right_section .company_contact, footer .right_section .social_link_holder{
+	    width: 100%;
+        display: block;
+        margin-bottom: 10%;
+	}
+	footer .left_section .logo_holder img{
+	    width: 60px;
+	}
+	footer .left_section .logo_holder p{
+	    font-size: 16px;
+	}
+	footer .left_section .footer_link_holder{
+	    margin-left: 0;
+	}
+	footer .left_section .footer_link_holder a{
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+	}
+	
+	header{
+        width: 96%;
+        padding: 1rem 2%;
+	}
+	
+	nav{
+        display: inline-block;
+        float: right;
+	}
+	.main_nav{
+	    position: fixed;
+        width: 200px;
+        height: 100%;
+        top: 0;
+        right: -200px;
+        margin: 0;
+        background: #000;
+		transition: 0.5s;
+		transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+	}
+	.main_nav a{
+    	display: block;
+        width: 80%;
+        margin: 15% auto;
+	}
+	.main_nav a:first-child{
+	    margin-top: 7rem;
+	}
+	.main_nav.active{
+        right: 0;
+	}
+}
+
+@media print, screen and (max-width: 500px) {
+	#banner_section{
+		background-size: 150%;
+	}
+    #banner_section .banner_content{
+        background-size: 80%;
+    }
+    #banner_section .overlay{
+        background-color: rgba(0,0,0,0.65); 
+    }
+	#banner_section .banner_content .title_content{
+        padding: 35% 0 10%;
+	}
+	#banner_section h1, #popular_section h1{
+	    font-size: 5vw;
+	    width: 70%;
+	    margin-bottom: 7%;
+	}
+	#banner_section h3, #popular_section h3{
+	    font-size: 3vw;
+        width: 80%;
+	    margin-bottom: 7%;
+	}
+	#banner_section button{
+        font-size: 2.8vw;
+	}
+	#banner_section .banner_content .top_slider{
+		margin-bottom: 10%;
+		margin-left: 5%;
+		width: 1500px;
+	}
+	#banner_section .banner_content .title_content, #popular_section h4, #popular_section .link_holder{
+        width: 90%;
+	}
+	
+	#popular_section h4{
+        font-size: 3.5vw;
+	}
+	#popular_section .link_holder{
+        margin: 10% auto 5%;
+	}
+	#popular_section .poster_holder{
+		width: 2200px;
+		margin-left: 5%;
+	}
+	#popular_section .indicator_holder{
+		left: 5%;
+		width: 90%;
+		top: 23%;
+	}
+	#popular_section .btm_section{
+		margin-top: -65%;
+		padding-bottom: 160%;
+	}
+	#popular_section .btm_section .description_content .title_content{
+	    width: 80%;
+        padding-left: 0;
+        margin: auto;
+        display: block;
+	}
+	#popular_section .btm_section .description_content img{
+        display: block;
+        width: 80%;
+        margin: auto;
+	}
+	#popular_section h3{
+	    WIDTH: 90%;
+	}
+}
